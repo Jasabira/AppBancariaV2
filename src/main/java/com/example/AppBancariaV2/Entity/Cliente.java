@@ -11,7 +11,7 @@ public class Cliente {
     private String nombre;
     private String apellido;
     private Integer edad;
-    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true) // 1: si insertamos, actualizamos o eliminamos una entidad, también se aplican estas operaciones a la entidad que se relaciona. 2: Elimina todo lo relacionado
     private CuentaBancaria cuentaBancaria;
 
     public Cliente() {

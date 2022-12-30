@@ -144,10 +144,7 @@ public class ServiceCB {
             ingresar();
         }
     }
-
-    public void devuelveLista(){
-        System.out.println(repository.findAll());
-    }
+    public void devuelveLista(){listaClientes.forEach(System.out::println);}
     private boolean comprobarCreacion() {
         System.out.println("Quieres crearte una cuenta? si/no");
         String res = leer.next();
